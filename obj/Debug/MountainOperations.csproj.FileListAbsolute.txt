@@ -87,3 +87,4 @@ c:\users\brend\onedrive\documents\visual studio 2015\Projects\MountainOperations
 c:\users\brend\onedrive\documents\visual studio 2015\Projects\MountainOperations\MountainOperations\bin\System.Web.Http.Owin.xml
 c:\users\brend\onedrive\documents\visual studio 2015\Projects\MountainOperations\MountainOperations\obj\Debug\MountainOperations.dll
 c:\users\brend\onedrive\documents\visual studio 2015\Projects\MountainOperations\MountainOperations\obj\Debug\MountainOperations.pdb
+c:\users\brend\onedrive\documents\visual studio 2015\Projects\MountainOperations\MountainOperations\obj\Debug\MountainOperations.csprojResolveAssemblyReference.cache

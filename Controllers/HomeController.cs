@@ -14,5 +14,11 @@ namespace MountainOperations.Controllers
 
             return View();
         }
+        public ActionResult About()
+        {
+            ViewBag.Title = "About Mountain";
+
+            return View();
+        }
     }
 }
