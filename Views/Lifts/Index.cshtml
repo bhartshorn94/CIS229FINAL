@@ -1,0 +1,99 @@
+﻿@model IEnumerable<MountainOperations.Models.Lift>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Lift1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lift2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lift3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lift4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lift5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lift6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lift7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lift8)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lift9)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lift10)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lift11)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lift12)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lift1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lift2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lift3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lift4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lift5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lift6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lift7)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lift8)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lift9)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lift10)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lift11)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lift12)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.LiftId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.LiftId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.LiftId })
+        </td>
+    </tr>
+}
+
+</table>

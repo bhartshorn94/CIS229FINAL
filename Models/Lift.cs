@@ -7,6 +7,7 @@ namespace MountainOperations.Models
 {
     public class Lift
     {
+        public virtual int LiftId { get; set; }
         public virtual Boolean Lift1 { get; set; }
         public virtual Boolean Lift2 { get; set; }
         public virtual Boolean Lift3 { get; set; }
