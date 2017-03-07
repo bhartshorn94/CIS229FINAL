@@ -26,8 +26,18 @@
     @Scripts.Render("~/bundles/jquery")
     <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
 }
-$.ajax({
-    url: 'https://www.ncdc.noaa.gov/cdo-web/api/v2/datasets',
-    headers: { 'token': 'IMqnjRdpUXBKQfOUTDxeNNTuTCTJVRlY' }
-}); 
-
+<script>
+    $(document).ready(
+        //AJAX for NCDC web service https://www.ncdc.noaa.gov/cdo-web/webservices/v2#gettingStarted
+        function Weather()
+        {
+            $.ajax({
+                type: "GET",
+                url: 'https://www.ncdc.noaa.gov/cdo-web/api/v2/data',
+                headers: {'token': 'IMqnjRdpUXBKQfOUTDxeNNTuTCTJVRlY'},
+                data: "json",
+                success: function () { alert('Success!' + authHeader); }
+                   }
+                  )
+        });
+</script>

@@ -123,5 +123,11 @@ namespace MountainOperations.Controllers
             }
             base.Dispose(disposing);
         }
+        public JsonResult Weather()
+        {
+            JsonResult ret = new JsonResult();
+
+            return ret;
+        }
     }
 }
