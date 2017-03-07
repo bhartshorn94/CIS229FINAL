@@ -4,3 +4,30 @@
     <p>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</p>
 </div>
 
+<div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">NOAA WEATHER</div>
+    <div class="panel-body">
+        <p>...</p>
+    </div>
+
+    <table class="table">
+        <tr>
+            <th>
+               
+            </th>
+            <th>
+                blue
+            </th>
+        </tr>
+        </table>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jquery")
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+}
+$.ajax({
+    url: 'https://www.ncdc.noaa.gov/cdo-web/api/v2/datasets',
+    headers: { 'token': 'IMqnjRdpUXBKQfOUTDxeNNTuTCTJVRlY' }
+}); 
+

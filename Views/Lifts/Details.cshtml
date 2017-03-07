@@ -112,3 +112,7 @@
     @Html.ActionLink("Edit", "Edit", new { id = Model.LiftId }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+@section Scripts {
+    @Scripts.Render("~/bundles/jquery")
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+}
