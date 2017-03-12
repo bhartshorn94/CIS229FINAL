@@ -1,26 +1,103 @@
-﻿<div class="jumbotron">
+﻿@model IEnumerable<MountainOperations.Models.Lift>
+<div class="jumbotron">
     <h1>Mountain Operations</h1>
     <p class="lead">Click below to find details on lifts</p>
-    <p>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</p>
+    <p>@Html.ActionLink("Details", "Details/1", "Lifts", new { area = "" }, null)</p>
 </div>
-
+<div>
+    <h2>Mountain Report</h2>
+    <p>Report:<br/>
+    mmdqmmq;
+    </p>
+</div>
 <div class="panel panel-default">
     <!-- Default panel contents -->
     <div class="panel-heading">NOAA WEATHER</div>
     <div class="panel-body">
-        <p>...</p>
+        <table class="table">
+            <tr>
+                <th>
+                    Temperature
+                </th>
+                <th>
+                    Precip
+                </th>
+                <th>
+                    Snow (in)
+                </th>
+            </tr>
+            <tr>
+                <td>boom</td>
+                <td>boom</td>
+                <td>boom</td>
+            </tr>
+        </table>
     </div>
 
     <table class="table">
-        <tr>
+        <tr> 
             <th>
-               
+                @Html.DisplayNameFor(model => model.Lift1)
             </th>
             <th>
-                blue
+                @Html.DisplayNameFor(model => model.Lift2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lift3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lift4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lift5)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lift6)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lift7)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lift8)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lift9)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lift10)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lift11)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lift12)
             </th>
         </tr>
-        </table>
+        <tr>
+    <!--Populate with open or closed depending on boolean value of each lift 1 Means open 0 means closed-->
+    @{
+        @*This value reflects the boolean value of each lift*@
+    int num = 0;
+    @*liftStatus will *@
+    string liftStatus = "Open";
+    if (num == 0)
+    {
+        liftStatus = "Closed";
+    }
+    else
+    {
+        liftStatus = "Open";
+    }
+    }
+    <tr>
+    @for (int i = 0; i < 12; i++)
+    {
+        <td>
+            @liftStatus
+        </td>
+    }
+    </tr>
+  </table>
 </div>
 @section Scripts {
     @Scripts.Render("~/bundles/jquery")
